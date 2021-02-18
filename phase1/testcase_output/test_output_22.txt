@@ -1,0 +1,6 @@
+start1(): started
+fork1: priority 9 < minnimum 5
+start1(): couldn't fork a child -- invalid priority
+fork1: priority -10 > max 1 
+start1(): couldn't fork a child -- invalid priority
+all processes have quit. normal termination has been achieved

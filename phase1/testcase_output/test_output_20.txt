@@ -1,0 +1,10 @@
+TEST:start 50 processes
+fork1: ProcTable is full.
+TEST:pid is -1.
+fork1: ProcTable is full.
+TEST:pid is -1.
+fork1: ProcTable is full.
+TEST:pid is -1.
+fork1: ProcTable is full.
+TEST:pid is -1.
+all processes have quit. normal termination has been achieved

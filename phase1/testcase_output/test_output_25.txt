@@ -1,0 +1,22 @@
+start1(): started
+XXp1(): creating children
+XXp2(): started, pid = 4, calling block_me
+XXp2(): started, pid = 5, calling block_me
+XXp2(): started, pid = 6, calling block_me
+XXp1(): creating zapper children
+XXp3(): started, pid = 7, calling zap on pid 5
+XXp4(): started, pid = 8, calling zap on pid 7
+XXp1(): unblocking children
+XXp2(): pid = 4, after block_me, result = 0
+XXp2(): pid = 4, is_zapped() = 0
+XXp2(): pid = 5, after block_me, result = -1
+XXp2(): pid = 5, is_zapped() = 1
+XXp3(): after call to zap, result of zap = -1
+XXp4(): after call to zap, result of zap = 0
+XXp2(): pid = 6, after block_me, result = 0
+XXp2(): pid = 6, is_zapped() = 0
+XXp1(): after unblocking 4, result = 0
+XXp1(): after unblocking 5, result = 0
+XXp1(): after unblocking 6, result = 0
+XXp1 done; returning...
+all processes have quit. normal termination has been achieved
